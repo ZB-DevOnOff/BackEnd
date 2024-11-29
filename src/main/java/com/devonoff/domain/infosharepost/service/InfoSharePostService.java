@@ -30,9 +30,7 @@ public class InfoSharePostService {
   public InfoSharePostDto createInfoSharePost(InfoSharePostDto infoSharePostDto) {
     Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
     UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-    if (Long.parseLong(userDetails.getUsername()) != infoSharePostDto.getUserId()) {
-      throw new CustomException(UNAUTHORIZED_ACCESS);
-    }
+    infoSharePostDto.setUserId(Long.parseLong(userDetails.getUsername()));
     return InfoSharePostDto.fromEntity(
         this.infoSharePostRepository.save(InfoSharePostDto.toEntity(infoSharePostDto)));
   }

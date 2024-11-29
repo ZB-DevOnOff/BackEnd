@@ -36,6 +36,7 @@ public class InfoSharePostController {
     return ResponseEntity.ok(result);
   }
 
+  //TODO userId -> nickname으로 변경해야함, InfoSharePost 테이블에 nickname추가?
   @GetMapping("/author/{userId}")
   public ResponseEntity<Page<InfoSharePostDto>> getInfoSharePostsByUserId(@PathVariable Long userId,
       @RequestParam Integer page, @RequestParam String search) {

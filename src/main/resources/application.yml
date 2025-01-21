@@ -1,9 +1,18 @@
+server:
+  port: 443  # aws 환경에서 사용할 포트
+  ssl:
+    key-store: ${SSL_PATH}
+    key-store-type: ${SSL_TYPE}
+    key-store-password: ${SSL_PASSWORD}
+    enabled: true
+  tomcat:
+    connection-timeout: 10s
 spring:
-
   application:
     name:
       DevOnOff
-
+  jackson:
+    time-zone: Asia/Seoul
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${MYSQL_URL}
@@ -65,6 +74,10 @@ spring:
             client-id: ${NAVER_CLIENT_ID}
             client-secret: ${NAVER_CLIENT_SECRET}
             redirect-uri: ${NAVER_REDIRECT_URI}
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
 
 cloud:
   aws:

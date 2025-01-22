@@ -1,6 +1,9 @@
 # DevOnOff
 스터디 모집, 채팅, 화상채팅을 하나의 플랫폼에서 진행할 수 있는 서비스입니다.
+
 ## 프로젝트 기능 및 설계
+
+
 * 회원가입 기능
   * 사용자는 회원가입을 할 수 있다.
   * 회원가입시 아이디,패스워드를 입력받으며, 아이디는 unique 해야한다.
@@ -30,12 +33,15 @@
   * 사용자의 스터디 신청이 수락된 경우 알림을 받을 수 있다.
   * 사용자의 스터디 신청이 거절된 경우 알림을 받을 수 있다.
   * 사용자가 신청한 스터디가 생성된 경우 알림을 받을 수 있다.
+
 ## 시연영상
 [![Video Label](http://img.youtube.com/vi/stJ2JhYMtrs/0.jpg)](https://youtu.be/stJ2JhYMtrs)
+
 ## ERD
 ![DevOnOff (2)](https://github.com/user-attachments/assets/4a7ed5a4-e4ee-433a-9c23-28aa7a3c5aaf)
+
 ## 기술스택
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 <img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white">
